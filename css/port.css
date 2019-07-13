@@ -1,0 +1,71 @@
+.grid-container{
+    display: grid;
+    grid-template-rows: 100px repeat(4, 300px);
+    grid-template-areas:
+      "nav"
+      "cover-image"
+      "about-me"
+      "work-offered"
+      "work-experience";
+  }
+  
+  /*setting up grid-area*/
+  .nav{
+    grid-area: nav;
+    background-color: pink;
+    
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "links";
+      
+  }
+  .links{
+    grid-area: links;
+    background-color: lightgrey;
+    
+    display: grid;
+    grid-template-columns: 30% repeat(4, 150px) 30%;
+    grid-template-areas:
+      ". about-page work-offered-page photography-page background-page ."
+      ;
+    align-content: center;
+  }
+  .links li{
+    list-style-type:none;
+    font-size: 20px
+  }
+  
+  .about-page{
+    grid-area: about-page;
+    
+  }
+  .work-offered-page{
+    grid-area: work-offered-page;
+  }
+  .photography-page{
+    grid-area: photography-page;
+  }
+  .background-page{
+    grid-area: background-page;
+    backgroun-color: pink;
+  }
+  
+  
+  
+  .cover-image{
+    grid-area: cover-image;
+    background-color:red;
+  }
+  .about-me{
+    grid-area: about-me;
+    background-color:green;
+  }
+  .work-offered{
+    grid-area: work-offered;
+    background-color:lightblue;
+  }
+  .work-experience{
+    grid-area: work-experience;
+    background-color:yellow;
+  }
