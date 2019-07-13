@@ -82,6 +82,33 @@
   .work-offered{
     grid-area: work-offered;
     background-color:lightblue;
+
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 1fr 200px;
+    grid-template-columns:25% 1fr 1fr 1fr 25%;
+    grid-template-areas: 
+    "work-offered work-offered work-offered work-offered work-offered"
+    ". code web-design photography .";
+  }
+  .work-offered{
+    grid-area: work-offered;
+  }
+  .work-header{
+    grid-column: 3/4;
+justify-self: center;
+  }
+  .code{
+    grid-area: code;
+    background-color: coral;
+  }
+  .web-design{
+    grid-area: web-design;
+    background-color: magenta;
+  }
+  .photography{
+    grid-area: photography;
+    background-color: green;
   }
   .work-experience{
     grid-area: work-experience;
