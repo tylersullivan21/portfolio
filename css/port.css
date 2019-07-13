@@ -60,11 +60,9 @@
   }
   .about-me{
     grid-area: about-me;
-    
-    display:grid;
-    grid-template-columns: 20% 1fr 2% 1fr 20%;
-    grid-template-areas:
-      ". self-pic . about-text ."
+    display: grid;
+    grid-template-columns: 15% 25% 2% 45% 15%;
+    grid-template-areas: ". self-pic . about-text .";
   }
 .self-pic{
   grid-area: self-pic;
@@ -74,9 +72,11 @@
   justify-self: end;
   align-self: center;
 }
+
 .about-text{
     grid-area: about-text;
-    
+    align-self: center;
+  
 }
   .work-offered{
     grid-area: work-offered;
