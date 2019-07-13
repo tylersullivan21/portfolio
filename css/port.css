@@ -53,10 +53,11 @@
   
   .cover-image{
     grid-area: cover-image;
-    background-color:red;
+    background-color:#fff;
   }
   .cover-image img{
       width: 100%;
+      opacity: .7;
   }
   .about-me{
     grid-area: about-me;
