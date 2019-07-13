@@ -62,8 +62,10 @@
   .about-me{
     grid-area: about-me;
     display: grid;
-    grid-template-columns: 15% 25% 2% 45% 15%;
+    grid-template-columns: 15% 25% 2% 30% 15%;
     grid-template-areas: ". self-pic . about-text .";
+   padding: 100px 60px;
+    
   }
 .self-pic{
   grid-area: self-pic;
@@ -80,20 +82,14 @@
   
 }
   .work-offered{
-    grid-area: work-offered;
-    background-color:lightblue;
+  grid-area: work-offered;
+  padding: 90px 60px;
 
-    display: grid;
-    grid-gap: 5px;
-    grid-template-rows: 1fr 200px;
-    grid-template-columns:25% 1fr 1fr 1fr 25%;
-    grid-template-areas: 
-    "work-offered work-offered work-offered work-offered work-offered"
-    ". code web-design photography .";
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  grid-template-columns: 15% 1fr 1fr 1fr 15%;
   }
-  .work-offered{
-    grid-area: work-offered;
-  }
+ 
   .work-header{
     grid-column: 3/4;
 justify-self: center;
