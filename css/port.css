@@ -1,6 +1,6 @@
 .grid-container{
     display: grid;
-    grid-template-rows: 100px repeat(4, 300px);
+    grid-template-rows: 100px 1fr repeat(4, 300px);
     grid-template-areas:
       "nav"
       "cover-image"
@@ -12,8 +12,6 @@
   /*setting up grid-area*/
   .nav{
     grid-area: nav;
-    background-color: pink;
-    
     display:grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -22,10 +20,10 @@
   }
   .links{
     grid-area: links;
-    background-color: lightgrey;
+    background-color: #fff;
     
     display: grid;
-    grid-template-columns: 30% repeat(4, 150px) 30%;
+    grid-template-columns: 35% repeat(4, 150px) 35%;
     grid-template-areas:
       ". about-page work-offered-page photography-page background-page ."
       ;
@@ -33,7 +31,7 @@
   }
   .links li{
     list-style-type:none;
-    font-size: 20px
+    font-size: 24px
   }
   
   .about-page{
@@ -48,7 +46,7 @@
   }
   .background-page{
     grid-area: background-page;
-    backgroun-color: pink;
+    background-color: pink;
   }
   
   
@@ -57,10 +55,29 @@
     grid-area: cover-image;
     background-color:red;
   }
+  .cover-image img{
+      width: 100%;
+  }
   .about-me{
     grid-area: about-me;
-    background-color:green;
+    
+    display:grid;
+    grid-template-columns: 20% 1fr 2% 1fr 20%;
+    grid-template-areas:
+      ". self-pic . about-text ."
   }
+.self-pic{
+  grid-area: self-pic;
+  background-color: pink;
+  border-radius: 50%;
+  max-width: 200px;
+  justify-self: end;
+  align-self: center;
+}
+.about-text{
+    grid-area: about-text;
+    
+}
   .work-offered{
     grid-area: work-offered;
     background-color:lightblue;
