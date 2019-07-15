@@ -260,16 +260,16 @@ justify-self: center;
 
 }
 
-
+/* test*/
 @media only screen and (max-width: 1440px) {
 .cover-text{
   font-size: 24px;
-  left: 27%;
+  left: 26%;
   top: 29%;
 }
 .tagline{
   top: 50%;
-  left: 35%;
+  left: 34%;
   font-size: 20px;
 }
 .links li{
