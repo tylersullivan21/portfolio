@@ -1,3 +1,4 @@
+
 body{
   margin: 0;
 }
@@ -41,7 +42,7 @@ body{
 
   position: absolute;
 
-  top: 5%;
+  top: 4%;
 
   right: 5%;
 
@@ -102,19 +103,33 @@ body{
 }
 
 .cover-text{
-font-family: proxima-nova, sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-word-break: break-all;
-word-break: normal;
-text-align: center;
-text-transform: uppercase;
+  font-family: myriad-pro, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  word-break: break-all;
+  word-break: normal;
+  text-align: center;
+  text-transform: uppercase;
   position: absolute;
   color: white;
-  left: 22%;
+  left: 30%;
   top: 40%;
- margin: auto auto;
+  margin: auto auto;
+}
+.tagline{
+  font-family: 'Allura', cursive;
+  position: absolute;
+  color: white;
+  top: 65%;
+  left: 36%;
+  font-size: 26px;
+}
+.bottom-tagline{
+  margin-top: 10px;
+
 }
 
 .about-page{
