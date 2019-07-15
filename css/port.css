@@ -1,112 +1,256 @@
 .grid-container{
-    display: grid;
-    grid-template-rows: 100px 1fr repeat(4, 300px);
-    grid-template-areas:
-      "nav"
-      "cover-image"
-      "about-me"
-      "work-offered"
-      "work-experience";
-  }
-  
-  /*setting up grid-area*/
-  .nav{
-    grid-area: nav;
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "links";
-      
-  }
-  .links{
-    grid-area: links;
-    background-color: #fff;
-    
-    display: grid;
-    grid-template-columns: 35% repeat(4, 150px) 35%;
-    grid-template-areas:
-      ". about-page work-offered-page photography-page background-page ."
-      ;
-    align-content: center;
-  }
-  .links li{
-    list-style-type:none;
-    font-size: 24px
-  }
-  
-  .about-page{
-    grid-area: about-page;
-    
-  }
-  .work-offered-page{
-    grid-area: work-offered-page;
-  }
-  .photography-page{
-    grid-area: photography-page;
-  }
-  .background-page{
-    grid-area: background-page;
-    background-color: pink;
-  }
-  
-  
-  
-  .cover-image{
-    grid-area: cover-image;
-    background-color:#fff;
-  }
-  .cover-image img{
-      width: 100%;
-      opacity: .7;
-  }
-  .about-me{
-    grid-area: about-me;
-    display: grid;
-    grid-template-columns: 15% 25% 2% 30% 15%;
-    grid-template-areas: ". self-pic . about-text .";
-   padding: 100px 60px;
-    
-  }
-.self-pic{
-  grid-area: self-pic;
-  background-color: pink;
-  border-radius: 50%;
-  max-width: 200px;
-  justify-self: end;
-  align-self: center;
-}
-
-.about-text{
-    grid-area: about-text;
-    align-self: center;
-  
-}
-  .work-offered{
-  grid-area: work-offered;
-  padding: 90px 60px;
 
   display: grid;
-  grid-template-rows: 200px 1fr;
-  grid-template-columns: 15% 1fr 1fr 1fr 15%;
-  }
+
+  grid-template-rows: 30% 1fr 1fr 1fr 1fr;
+
+  grid-template-areas:
+
+    "cover-image" "about-me" "work-offered" "work-experience";
+
+  align-content: center;
+
+}
+
+
+
+/*setting up grid-area*/
+
+.nav{
+
+  grid-area: nav;
+
+  display:grid;
+
+  grid-template-columns: 1fr;
+
+  grid-template-areas:
+
+  "links";
+
+   
+
+  /*! margin: auto; */
+
+  /*! justify-self: center; */
+
+  /*! align-content: center; */
+
+  position: absolute;
+
+  top: 0;
+
+  right: 0;
+
+  background: transparent;
+
+  font-weight: 600;
+
+  color: white;
+
+}
+
+.links{
+
+  grid-area: links;
+
+  /*! background-color: #fff; */
+
  
-  .work-header{
-    grid-column: 3/4;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  grid-template-areas:
+
+    "about-page work-offered-page photography-page background-page";
+
+  align-content: center;
+
+  padding-inline-start: 0px;
+
+  background: rgba(0,0,0,0.6);
+
+}
+
+.links li{
+
+  list-style-type:none;
+
+  font-size: 30px;
+
+  /*! background: rgba(0,0,0,0.4); */
+
+  text-align: center;
+
+  margin: 0 10px;
+
+}
+
+
+
+.about-page{
+
+  grid-area: about-page;
+
+ 
+
+}
+
+.work-offered-page{
+
+  grid-area: work-offered-page;
+
+}
+
+.photography-page{
+
+  grid-area: photography-page;
+
+}
+
+.background-page{
+
+  grid-area: background-page;
+
+  /*! background-color: pink; */
+
+}
+
+
+
+
+
+
+
+.cover-image{
+
+  grid-area: cover-image;
+
+  background-color:#fff;
+
+  position: relative;
+
+}
+
+.cover-image img{
+
+    width: 100%;
+
+    opacity: 0.7;
+
+}
+
+.about-me{
+
+  grid-area: about-me;
+
+  display: grid;
+
+  grid-template-columns: 44% 50%;
+
+  grid-template-areas: "self-pic about-text";
+
+ /*! padding: 100px 60px; */
+
+ 
+
+  /*! margin: 100px 15%; */
+
+  padding: 100px 20%;
+
+  /*! grid-template-rows: 100%; */
+
+}
+
+.self-pic{
+
+grid-area: self-pic;
+
+background-color: pink;
+
+border-radius: 50%;
+
+max-width: 200px;
+
+justify-self: end;
+
+align-self: center;
+
+margin-right: 25px;
+
+}
+
+
+
+.about-text{
+
+  grid-area: about-text;
+
+  align-self: center;
+
+
+
+  margin: 0 50px;
+
+  max-width: 500px;
+
+}
+
+.work-offered{
+
+grid-area: work-offered;
+
+padding: 90px 60px;
+
+
+
+display: grid;
+
+grid-template-rows: 200px 1fr;
+
+grid-template-columns: 15% 1fr 1fr 1fr 15%;
+
+}
+
+
+.work-header{
+
+  grid-column: 3/4;
+
 justify-self: center;
-  }
-  .code{
-    grid-area: code;
-    background-color: coral;
-  }
-  .web-design{
-    grid-area: web-design;
-    background-color: magenta;
-  }
-  .photography{
-    grid-area: photography;
-    background-color: green;
-  }
-  .work-experience{
-    grid-area: work-experience;
-    background-color:yellow;
-  }
+
+}
+
+.code{
+
+  grid-area: code;
+
+  background-color: coral;
+
+}
+
+.web-design{
+
+  grid-area: web-design;
+
+  background-color: magenta;
+
+}
+
+.photography{
+
+  grid-area: photography;
+
+  background-color: green;
+
+}
+
+.work-experience{
+
+  grid-area: work-experience;
+
+  background-color:yellow;
+
+}
