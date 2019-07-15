@@ -259,3 +259,19 @@ justify-self: center;
   background-color:yellow;
 
 }
+
+
+@media only screen and (max-width: 1140px) {
+.cover-text{
+  font-size: 24px;
+  left: 27%;
+  top: 29%;
+}
+.tagline{
+  top: 50%;
+  left: 35%;
+}
+.links li{
+  font-size: 14px;
+}
+}
