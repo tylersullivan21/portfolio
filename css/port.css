@@ -148,75 +148,40 @@ body{
 
 
 .about-me{
-
   grid-area: about-me;
-
   display: grid;
-
   grid-template-columns: 44% 50%;
-
   grid-template-areas: "self-pic about-text";
-
- /*! padding: 100px 60px; */
-
- 
-
-  /*! margin: 100px 15%; */
-
   padding: 100px 20%;
-
-  /*! grid-template-rows: 100%; */
-
 }
-
-.self-pic{
-
-grid-area: self-pic;
-
-background-color: pink;
-
-border-radius: 50%;
-
-max-width: 200px;
-
-justify-self: end;
-
-align-self: center;
-
-margin-right: 25px;
-
-}
-
-
-
 .about-text{
-
   grid-area: about-text;
-
   align-self: center;
-
-
-
-  margin: 0 50px;
-
+  margin: 0px 1em;
   max-width: 500px;
-
+  font-size: 20px;
+  line-height: 1.5em;
 }
+.self-pic{
+grid-area: self-pic;
+background-color: pink;
+border-radius: 50%;
+max-width: 260px;
+justify-self: end;
+align-self: center;
+margin-right: 25px;
+}
+
+
+
+
+
 
 .work-offered{
-
 grid-area: work-offered;
-
-padding: 90px 60px;
-
-
-
 display: grid;
-
 grid-template-rows: 200px 1fr;
-
 grid-template-columns: 15% 1fr 1fr 1fr 15%;
-
 }
 
 
