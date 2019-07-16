@@ -77,18 +77,22 @@ body{
 }
 
 .links li{
-
   list-style-type:none;
   font-family: proxima-nova, sans-serif;
   font-style: normal;
   text-transform: uppercase;
   font-size: 15px;
   /*! background: rgba(0,0,0,0.4); */
-
   text-align: center;
-
   margin: 0 10px;
-
+}
+.links li a{
+  color: white;
+  text-decoration:none;
+}
+.links li a:hover{
+  background-color: grey;
+  width: 25px;
 }
 
 .cover-image{
