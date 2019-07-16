@@ -180,41 +180,34 @@ margin-right: 25px;
 .work-offered{
 grid-area: work-offered;
 display: grid;
-grid-template-rows: 200px 1fr;
-grid-template-columns: 15% 1fr 1fr 1fr 15%;
+grid-template-rows:1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas:
+"work-header work-header work-header"
+"code web-design photography";
 }
 
 
 .work-header{
-
-  grid-column: 3/4;
-
+  grid-column: 2/3;
 justify-self: center;
-
 }
-
 .code{
-
-  grid-area: code;
-
+  grid-row: 2;
+grid-column: 1/2;
   background-color: coral;
-
 }
-
 .web-design{
-
+  grid-column:2/3;
+  grid-row: 2;
   grid-area: web-design;
-
   background-color: magenta;
-
 }
-
 .photography{
-
+  grid-column:3/4;
+  grid-row: 2;
   grid-area: photography;
-
   background-color: green;
-
 }
 
 .work-experience{
