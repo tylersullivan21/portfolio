@@ -10,7 +10,7 @@ body{
 
   grid-template-areas:
 
-    "cover-image" "about-me" "work-offered" "work-experience";
+    "cover-image" "about-me" "skills" "work-experience";
 
   align-content: center;
 
@@ -68,7 +68,7 @@ body{
 
   grid-template-areas:
 
-    "about-page work-offered-page photography-page background-page";
+    "about-page skills-page photography-page background-page";
 
   align-content: center;
 
@@ -139,8 +139,8 @@ body{
 .about-page{
   grid-area: about-page;
 }
-.work-offered-page{
-  grid-area: work-offered-page;
+.skills-page{
+  grid-area: skills-page;
 }
 .photography-page{
   grid-area: photography-page;
@@ -158,22 +158,22 @@ body{
   grid-template-areas: "self-pic about-text";
   padding: 100px 20%;
 }
-.about-text{
-  grid-area: about-text;
-  align-self: center;
-  margin: 0px 1em;
-  max-width: 500px;
-  font-size: 20px;
-  line-height: 1.5em;
-}
 .self-pic{
-grid-area: self-pic;
-background-color: pink;
-border-radius: 50%;
-max-width: 260px;
-justify-self: end;
-align-self: center;
-margin-right: 25px;
+  grid-area: self-pic;
+  background-color: pink;
+  border-radius: 49%;
+  max-width: 280px;
+  justify-self: end;
+  align-self: center;
+  margin-right: 25px;
+}
+.about-text {
+	grid-area: about-text;
+	align-self: center;
+	margin: 0px 1em;
+	max-width: 540px;
+	font-size: 20px;
+	line-height: 1.5em;
 }
 
 
@@ -181,18 +181,19 @@ margin-right: 25px;
 
 
 
-.work-offered{
-grid-area: work-offered;
+.skills{
+grid-area: skills;
 display: grid;
+padding: 100px 20%;
 grid-template-rows:1fr 1fr;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-areas:
-"work-header work-header work-header"
+"skills-header skills-header skills-header"
 "code web-design photography";
 }
 
 
-.work-header{
+.skills-header{
   grid-column: 2/3;
 justify-self: center;
 }
