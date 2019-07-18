@@ -199,15 +199,51 @@ justify-self: center;
 }
 .code{
   grid-row: 2;
-grid-column: 1/2;
-  background-color: coral;
+  grid-column: 1/2;
+  display: grid;
+
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "code-icon"
+  "code-list";
 }
+.code-icon{
+  grid-area: code-icon;
+  justify-self: center;
+  align-self: end;
+  margin-bottom: 10px;
+  max-width: 150px;
+}
+.code-list{
+  grid-area: code-list;
+  justify-self: center;
+  line-height: 1.5em;
+}
+
 .web-design{
   grid-column:2/3;
   grid-row: 2;
   grid-area: web-design;
-  background-color: magenta;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "web-icon"
+  "web-list";
 }
+
+.web-icon{
+  grid-area: web-icon;
+  justify-self: center;
+  align-self: end;
+  margin-bottom: 10px;
+  max-width: 150px;
+}
+.web-list{
+  grid-area: web-list;
+  justify-self: center;
+  line-height: 1.5em;
+}
+
 .photography{
   grid-column:3/4;
   grid-row: 2;
