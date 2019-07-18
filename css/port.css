@@ -154,6 +154,7 @@ body{
 .about-me{
   grid-area: about-me;
   display: grid;
+  background: #edeeef;
   grid-template-columns: 44% 50%;
   grid-template-areas: "self-pic about-text";
   padding: 100px 20%;
@@ -184,8 +185,8 @@ body{
 .skills{
 grid-area: skills;
 display: grid;
-padding: 100px 20%;
-grid-template-rows:1fr 1fr;
+padding: 100px 25%;
+grid-template-rows:150px 1fr;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-areas:
 "skills-header skills-header skills-header"
@@ -218,6 +219,8 @@ justify-self: center;
   grid-area: code-list;
   justify-self: center;
   line-height: 1.5em;
+  list-style-type: none;
+  padding: 0;
 }
 
 .web-design{
@@ -242,21 +245,38 @@ justify-self: center;
   grid-area: web-list;
   justify-self: center;
   line-height: 1.5em;
+  list-style-type: none;
 }
 
 .photography{
   grid-column:3/4;
   grid-row: 2;
   grid-area: photography;
-  background-color: green;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "cam-icon"
+  "cam-list";
 }
+.cam-icon{
+  grid-area: cam-icon;
+  justify-self: center;
+  align-self: end;
+  margin-bottom: 10px;
+  max-width: 150px;
+}
+.cam-list{
+  grid-area: cam-list;
+  justify-self: center;
+  line-height: 1.5em;
+  list-style-type: none;
+}
+
 
 .work-experience{
 
   grid-area: work-experience;
-
-  background-color:yellow;
-
+  background: #edeeef
 }
 
 /* test*/
