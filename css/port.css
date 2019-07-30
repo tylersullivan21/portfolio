@@ -1,97 +1,206 @@
 body{
   margin: 0;
   font-family: proxima-nova, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
+
 .grid-container{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+
+ 
+
   grid-template-areas:
- "about-me" "skills" "work-experience";
+
+ 
+
+"about-me" "skills" "work-experience";
+
+ 
+
   align-content: center;
+
+ 
+
 }
+
+ 
+
 /*setting up grid-area*/
+
+ 
+
 .nav
+
   {
+
   /*! margin: auto; */
+
+ 
+
   /*! justify-self: center; */
+
+ 
+
   /*! align-content: center; */
+
   position: fixed;
+
   /* top: 4%; */
+
   /* right: 5%; */
+
   background: transparent;
+
   font-weight: 600;
+
   color: white;
+
   width: 100%;
+
   height: 75px;
+
   /* border: solid 1px cyan; */
+
   z-index: 5;
+
   background: black;
+
 }
+
+ 
+
 .links{grid-area: links;
+
+ 
+
   /*! background-color: #fff; */display: grid;grid-template-columns: 20% 20% 35% 25%;grid-template-areas:
- "about-page skills-page photography-page background-page";align-content: center;padding-inline-start: 0px;width: 40%;/* transform: translateX(10px); */position: fixed;right: 0;/* border: solid 1px yellow; */}
+
+ 
+
+    "about-page skills-page photography-page background-page";align-content: center;padding-inline-start: 0px;width: 40%;/* transform: translateX(10px); */position: fixed;right: 0;/* border: solid 1px yellow; */}
+
 .hero{
+
   background: black;
+
   background-image: url("../img/asa-2-overlay.jpg");
+
   background-position: center;
+
   background-attachment: fixed;
+
   /* background-size: 100%; */
+
   height: 1000px;
+
   /* max-height: 900px; */
+
   position: relative;
+
   background-repeat: no-repeat;
+
 }
+
 .links li{
+
   list-style-type:none;
+
   font-family: 'Poppins', sans-serif;
+
   font-style: normal;
+
   text-transform: uppercase;
+
   font-size: 17px;
+
   /*! background: rgba(0,0,0,0.4); */
+
   text-align: center;
+
   margin: 0 10px;
+
 }
+
 .links li a{
+
   color: white;
+
   text-decoration:none;
+
 }
+
 .links li a:hover{
+
   background-color: grey;
+
   width: 25px;
+
 }
 
  
 
 .cover-text{
+
   font-family: 'Oxygen', sans-serif;
+
   font-style: normal;
+
   font-weight: 300;
+
   font-style: normal;
+
   font-weight: 700;
+
   font-size: 30px;
+
   word-break: break-all;
+
   word-break: normal;
+
   text-align: center;
+
   text-transform: uppercase;
+
   /* position: absolute; */
+
   color: white;
+
   /* left: 32%; */
+
   /* top: 32%; */
+
   width: 70%;
+
   text-align: center;
+
   margin: auto auto;
+
 }
+
 .tagline{
+
   font-family: 'Allura', cursive;
+
   position: relative;
+
   color: white;
+
   /* top: 67%; */
+
   /* left: 36%; */
+
   width: 100%;
+
   text-align: center;
+
   font-size: 26px;
+
 }
+
 .bottom-tagline{
+
   margin-top: 10px;
 
  
@@ -101,46 +210,83 @@ body{
  
 
 .about-page{
+
   grid-area: about-page;
+
 }
+
 .skills-page{
+
   grid-area: skills-page;
+
 }
+
 .photography-page{
+
   grid-area: photography-page;
+
 }
+
 .background-page{
+
   grid-area: background-page;
+
   /*! background-color: pink; */
+
 }
 
  
 
+ 
 
 .about-me{
+
   grid-area: about-me;
+
   display: grid;
+
   background: #edeeef;
+
   grid-template-columns: 44% 50%;
+
   grid-template-areas: "self-pic about-text";
+
   padding: 100px 20%;
+
 }
+
 .self-pic{
+
   grid-area: self-pic;
+
   background-color: pink;
+
   border-radius: 49%;
+
   max-width: 280px;
+
   justify-self: end;
+
   align-self: center;
+
   margin-right: 25px;
+
 }
+
 .about-text {
-    grid-area: about-text;
-    align-self: center;
-    margin: 0px 1em;
-    max-width: 540px;
-    font-size: 18px;
-    line-height: 1.5em;
+
+                grid-area: about-text;
+
+                align-self: center;
+
+                margin: 0px 1em;
+
+                max-width: 540px;
+
+                font-size: 18px;
+
+                line-height: 1.5em;
+
 }
 
  
@@ -149,133 +295,234 @@ body{
 
  
 
+ 
+
+ 
+
+ 
 
 .skills{
+
 grid-area: skills;
+
 display: grid;
+
 padding: 100px 25%;
+
 grid-template-rows:150px 1fr;
+
 grid-template-columns: 1fr 1fr 1fr;
+
 grid-template-areas:
+
 "skills-header skills-header skills-header"
+
 "code web-design photography";
+
 }
 
  
 
+ 
 
 .skills-header{
+
   grid-column: 2/3;
+
 justify-self: center;
+
 }
+
 .code{
+
   grid-row: 2;
+
   grid-column: 1/2;
+
   display: grid;
 
  
 
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
+
+  grid-template-areas:
+
   "code-icon"
+
   "code-list";
+
 }
+
 .code-icon{
+
   grid-area: code-icon;
+
   justify-self: center;
+
   align-self: end;
+
   margin-bottom: 10px;
+
   max-width: 150px;
+
 }
+
 .code-list{
+
   grid-area: code-list;
+
   justify-self: center;
+
   line-height: 1.5em;
+
   list-style-type: none;
+
   padding: 0;
+
 }
 
  
 
 .web-design{
+
   grid-column:2/3;
+
   grid-row: 2;
+
   grid-area: web-design;
+
   display: grid;
+
   grid-template-rows: 1fr 1fr;
+
   grid-template-areas:
+
   "web-icon"
+
   "web-list";
+
 }
 
  
 
 .web-icon{
+
   grid-area: web-icon;
+
   justify-self: center;
+
   align-self: end;
+
   margin-bottom: 10px;
+
   max-width: 150px;
+
 }
+
 .web-list{
+
   grid-area: web-list;
+
   justify-self: center;
+
   line-height: 1.5em;
+
   list-style-type: none;
+
 }
 
  
 
 .photography{
+
   grid-column:3/4;
+
   grid-row: 2;
+
   grid-area: photography;
+
   display: grid;
+
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
+
+  grid-template-areas:
+
   "cam-icon"
+
   "cam-list";
+
 }
+
 .cam-icon{
+
   grid-area: cam-icon;
+
   justify-self: center;
+
   align-self: end;
+
   margin-bottom: 10px;
+
   max-width: 150px;
+
 }
+
 .cam-list{
+
   grid-area: cam-list;
+
   justify-self: center;
+
   line-height: 1.5em;
+
   list-style-type: none;
+
 }
 
  
 
+ 
 
 .work-experience{
 
  
 
   grid-area: work-experience;
+
   background: #edeeef
+
 }
 
  
 
 /* test*/
+
 @media only screen and (max-width: 1440px) {
+
 .cover-text{
+
   font-size: 24px;
+
   left: 26%;
+
   top: 29%;
+
 }
+
 .tagline{
+
   top: 50%;
+
   left: 34%;
+
   font-size: 20px;
+
 }
+
 .links li{
+
   font-size: 14px;
+
 }
+
 }
