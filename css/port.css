@@ -7,33 +7,20 @@ body{
 
   display: grid;
 
-  grid-template-rows: 30% 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 
   grid-template-areas:
 
-    "cover-image" "about-me" "skills" "work-experience";
+ "about-me" "skills" "work-experience";
 
   align-content: center;
 
 }
 
-
 /*setting up grid-area*/
 
-.nav{
-
-  grid-area: nav;
-
-  display:grid;
-
-  grid-template-columns: 1fr;
-
-  grid-template-areas:
-
-  "links";
-
-   
-
+.nav
+  {
   /*! margin: auto; */
 
   /*! justify-self: center; */
@@ -60,11 +47,9 @@ body{
 
   /*! background-color: #fff; */
 
- 
-
   display: grid;
 
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 20% 20% 35% 25%;
 
   grid-template-areas:
 
@@ -75,7 +60,14 @@ body{
   padding-inline-start: 0px;
 
 }
+.hero{
+  background-image: url("../img/asa-2-overlay.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  height: 800px;
 
+  
+}
 .links li{
   list-style-type:none;
   font-family: 'Poppins', sans-serif;
@@ -94,13 +86,6 @@ body{
 .links li a:hover{
   background-color: grey;
   width: 25px;
-}
-
-.cover-image{
-  grid-area: cover-image;
-  background-color:#fff;
-  position: relative;
-
 }
 
 .cover-image img{
@@ -122,14 +107,14 @@ body{
   position: absolute;
   color: white;
   left: 32%;
-  top: 38%;
+  top: 32%;
   margin: auto auto;
 }
 .tagline{
   font-family: 'Allura', cursive;
-  position: absolute;
+  position: relative;
   color: white;
-  top: 65%;
+  top: 67%;
   left: 36%;
   font-size: 26px;
 }
