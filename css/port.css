@@ -27,18 +27,12 @@ body{
 
   /*! align-content: center; */
 
-  position: absolute;
-
+  position: fixed;
   top: 4%;
-
   right: 5%;
-
   background: transparent;
-
   font-weight: 600;
-
   color: white;
-
 }
 
 .links{
