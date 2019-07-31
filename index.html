@@ -22,7 +22,7 @@
 
 <body>  
     <header>
-    <nav class="nav">  
+    <nav id="stickynav" class="nav">  
         <ul class="links">
             <li class="about-page"><a href="index.html">Home</a></li> 
             <li class="skills-page">Skills</li>
@@ -184,20 +184,39 @@
 </div>
 
 <script>
-    
+
+window.onload = navswitch;
+
+function navswitch(){
+
+    var picnavset = false;
+    var blacknavset = false;
+
 window.addEventListener('scroll',() =>{
     const scrolled = window.scrollY;
-    console.log(scrolled);
    
-    if(scrolled === 334){
+    
+    var sticky = document.getElementById("stickynav");
 
-        console.log("the number of pixels on the page scrolled.");
-    /*    var sticky = document.getElementsByClassName("nav");
-        sticky[0].style.backgroundColor = "pink";
-        sticky[0].style.height = "200px";*/
-    }
+
+ if(scrolled <= 389 && picnavset==false){
+
+        sticky.classList.add("picnav");
+        sticky.classList.remove("blacknav");
+        picnavset = true;
+        blacknavset = false;
+  }
+ 
+else if(scrolled >= 390 && blacknavset==false){
+        sticky.classList.add("blacknav");
+        sticky.classList.remove("picnav");
+        blacknavset = true;
+        picnavset = false;
+ }
     ;
     })
+
+}
 
 </script>
 

@@ -1,50 +1,64 @@
-body{
+body {
   margin: 0;
   font-family: proxima-nova, sans-serif;
   width: 100%;
   overflow-x: hidden;
 }
 
-.grid-container{
+.grid-container {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-"about-me" "skills" "work-experience";
+    "about-me""skills""work-experience";
   align-content: center;
 }
-/*setting up grid-area*/
-  .nav {
 
-      position: fixed;
-    
-      /* top: 4%; */
-    
-        /* right: 5%; */
-    
-         background: url(../img/asa-2-overlay.jpg);
-    
-         font-weight: 600;
-    
-      /* border: 1px solid yellow; */
-    
-z-index: 5;
-    
-     width: 100%;
-    
-      height: 85px;
-    
- padding-top: 30px;
+/*setting up grid-area*/
+.nav {
+  position: fixed;
+  /* top: 4%; */
+  /* right: 5%; */
+  font-weight: 600;
+  /* border: 1px solid yellow; */
+  z-index: 5;
+  width: 100%;
+  height: 79px;
+  padding-top: 30px;
+
+}
+
+
+.picnav {
+  background: url(../img/asa-2-overlay.jpg);
   background-position: center;
   background-attachment: fixed;
-    
-   
-  
-}
-.links{grid-area: links;
-  /*! background-color: #fff; */display: grid;grid-template-columns: 20% 20% 35% 25%;grid-template-areas:
-    "about-page skills-page photography-page background-page";align-content: center;padding-inline-start: 0px;width: 40%;/* transform: translateX(10px); */position: fixed;right: 0;/* border: solid 1px yellow; */}
 
-.hero{
+}
+
+.blacknav {
+  background: black;
+}
+
+
+
+
+.links {
+  grid-area: links;
+  /*! background-color: #fff; */
+  display: grid;
+  grid-template-columns: 20% 20% 35% 25%;
+  grid-template-areas:
+    "about-page skills-page photography-page background-page";
+  align-content: center;
+  padding-inline-start: 0px;
+  width: 40%;
+  /* transform: translateX(10px); */
+  position: fixed;
+  right: 0;
+  /* border: solid 1px yellow; */
+}
+
+.hero {
   background: black;
   background-image: url("../img/asa-2-overlay.jpg");
   background-position: center;
@@ -56,9 +70,9 @@ z-index: 5;
   background-repeat: no-repeat;
 }
 
-.links li{
+.links li {
 
-  list-style-type:none;
+  list-style-type: none;
 
   font-family: 'Poppins', sans-serif;
 
@@ -76,15 +90,15 @@ z-index: 5;
 
 }
 
-.links li a{
+.links li a {
 
   color: white;
 
-  text-decoration:none;
+  text-decoration: none;
 
 }
 
-.links li a:hover{
+.links li a:hover {
 
   background-color: grey;
 
@@ -92,9 +106,9 @@ z-index: 5;
 
 }
 
- 
 
-.cover-text{
+
+.cover-text {
 
   font-family: 'Oxygen', sans-serif;
 
@@ -132,7 +146,7 @@ z-index: 5;
 
 }
 
-.tagline{
+.tagline {
 
   font-family: 'Allura', cursive;
 
@@ -152,35 +166,35 @@ z-index: 5;
 
 }
 
-.bottom-tagline{
+.bottom-tagline {
 
   margin-top: 10px;
 
- 
+
 
 }
 
- 
 
-.about-page{
+
+.about-page {
 
   grid-area: about-page;
 
 }
 
-.skills-page{
+.skills-page {
 
   grid-area: skills-page;
 
 }
 
-.photography-page{
+.photography-page {
 
   grid-area: photography-page;
 
 }
 
-.background-page{
+.background-page {
 
   grid-area: background-page;
 
@@ -188,11 +202,11 @@ z-index: 5;
 
 }
 
- 
 
- 
 
-.about-me{
+
+
+.about-me {
 
   grid-area: about-me;
 
@@ -208,7 +222,7 @@ z-index: 5;
 
 }
 
-.self-pic{
+.self-pic {
 
   grid-area: self-pic;
 
@@ -225,48 +239,50 @@ z-index: 5;
   margin-right: 25px;
 
 }
+
 .about-text {
-                grid-area: about-text;
-                align-self: center;
-                margin: 0px 1em;
-                max-width: 540px;
-                font-size: 18px;
-             line-height: 1.5em;
-
-}
-.skills{
-
-grid-area: skills;
-
-display: grid;
-
-padding: 100px 25%;
-
-grid-template-rows:150px 1fr;
-
-grid-template-columns: 1fr 1fr 1fr;
-
-grid-template-areas:
-
-"skills-header skills-header skills-header"
-
-"code web-design photography";
+  grid-area: about-text;
+  align-self: center;
+  margin: 0px 1em;
+  max-width: 540px;
+  font-size: 18px;
+  line-height: 1.5em;
 
 }
 
- 
+.skills {
 
- 
+  grid-area: skills;
 
-.skills-header{
+  display: grid;
+
+  padding: 100px 25%;
+
+  grid-template-rows: 150px 1fr;
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-template-areas:
+
+    "skills-header skills-header skills-header"
+
+    "code web-design photography";
+
+}
+
+
+
+
+
+.skills-header {
 
   grid-column: 2/3;
 
-justify-self: center;
+  justify-self: center;
 
 }
 
-.code{
+.code {
 
   grid-row: 2;
 
@@ -274,19 +290,19 @@ justify-self: center;
 
   display: grid;
 
- 
+
 
   grid-template-rows: 1fr 1fr;
 
   grid-template-areas:
 
-  "code-icon"
+    "code-icon"
 
-  "code-list";
+    "code-list";
 
 }
 
-.code-icon{
+.code-icon {
 
   grid-area: code-icon;
 
@@ -300,7 +316,7 @@ justify-self: center;
 
 }
 
-.code-list{
+.code-list {
 
   grid-area: code-list;
 
@@ -314,11 +330,11 @@ justify-self: center;
 
 }
 
- 
 
-.web-design{
 
-  grid-column:2/3;
+.web-design {
+
+  grid-column: 2/3;
 
   grid-row: 2;
 
@@ -330,15 +346,15 @@ justify-self: center;
 
   grid-template-areas:
 
-  "web-icon"
+    "web-icon"
 
-  "web-list";
+    "web-list";
 
 }
 
- 
 
-.web-icon{
+
+.web-icon {
 
   grid-area: web-icon;
 
@@ -352,7 +368,7 @@ justify-self: center;
 
 }
 
-.web-list{
+.web-list {
 
   grid-area: web-list;
 
@@ -364,11 +380,11 @@ justify-self: center;
 
 }
 
- 
 
-.photography{
 
-  grid-column:3/4;
+.photography {
+
+  grid-column: 3/4;
 
   grid-row: 2;
 
@@ -380,13 +396,13 @@ justify-self: center;
 
   grid-template-areas:
 
-  "cam-icon"
+    "cam-icon"
 
-  "cam-list";
+    "cam-list";
 
 }
 
-.cam-icon{
+.cam-icon {
 
   grid-area: cam-icon;
 
@@ -400,7 +416,7 @@ justify-self: center;
 
 }
 
-.cam-list{
+.cam-list {
 
   grid-area: cam-list;
 
@@ -412,63 +428,64 @@ justify-self: center;
 
 }
 
- 
 
- 
 
-.work-experience{
 
- 
+
+.work-experience {
+
+
 
   grid-area: work-experience;
 
   background: #edeeef
-
 }
 
- 
+
 
 /* test*/
 
 @media only screen and (max-width: 1440px) {
 
-.cover-text{
+  .cover-text {
 
-  font-size: 24px;
+    font-size: 24px;
 
-  left: 26%;
+    left: 26%;
 
-  top: 29%;
+    top: 29%;
 
-}
-.hero{
-  height: 500px;
-}
-.tagline{
-text-align: center;
-  font-size: 20px;
+  }
 
-}
+  .hero {
+    height: 500px;
+  }
 
-.links li{
+  .tagline {
+    text-align: center;
+    font-size: 20px;
 
-  font-size: 14px;
+  }
 
-}
+  .links li {
 
-}
+    font-size: 14px;
 
-@media screen and (height: 700px) { 
-  .nav{
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 5;
-  background-color: black;
-  height: 75px;
-  width: 100%;
+  }
 
 }
+
+@media screen and (height: 700px) {
+  .nav {
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 5;
+    background-color: black;
+    height: 75px;
+    width: 100%;
+
+  }
 
 
 }
