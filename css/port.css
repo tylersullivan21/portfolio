@@ -4,7 +4,6 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-
 .grid-container {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -12,7 +11,6 @@ body {
     "about-me""skills""work-experience";
   align-content: center;
 }
-
 /*setting up grid-area*/
 .nav {
   position: fixed;
@@ -24,24 +22,16 @@ body {
   width: 100%;
   height: 79px;
   padding-top: 30px;
-
 }
-
-
 .picnav {
   background: url(../img/asa-2-overlay.jpg);
   background-position: center;
   background-attachment: fixed;
-
 }
-
 .blacknav {
   background: black;
+  height: 50px;
 }
-
-
-
-
 .links {
   grid-area: links;
   /*! background-color: #fff; */
@@ -57,7 +47,6 @@ body {
   right: 0;
   /* border: solid 1px yellow; */
 }
-
 .hero {
   background: black;
   background-image: url("../img/asa-2-overlay.jpg");
@@ -69,31 +58,19 @@ body {
   position: relative;
   background-repeat: no-repeat;
 }
-
 .links li {
-
   list-style-type: none;
-
   font-family: 'Poppins', sans-serif;
-
   font-style: normal;
-
   text-transform: uppercase;
-
   font-size: 17px;
-
   /*! background: rgba(0,0,0,0.4); */
-
   text-align: center;
-
   margin: 0 10px;
-
-}
-
-.links li a {
-
   color: white;
-
+}
+.links li a {
+  color: white;
   text-decoration: none;
 
 }
